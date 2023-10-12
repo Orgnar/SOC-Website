@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+body{
+    display:grid;
+    grid-template-areas:
+    'header header header header'
+    'navi navi navi navi'
+    'main main main aside'
+    'footer footer footer footer'
+}
+ 
+.grid1{
+    grid-area:header
+}
+.grid2{grid-area:navi}
+.grid3{grid-area:main}
+.grid4{grid-area:aside}
+.grid5{grid-area:footer}
+
+
+#header-logo{
+    max-width:100px;
+}
+
+main{
+    background-color:rgb(197, 241, 155);
+    padding:2%;
+    margin-inline-end:10px;
+    border: 2px solid black;
+}
+aside{
+    background-color:#00AFB9;
+    padding:20px;
+    border: 2px solid black;
+}
+
+.main-section{
+    display:flex;
+    flex-direction:column;
+  
+}
+
+footer{
+    padding:2%;
+    display:flex;
+    background-color:antiquewhite;
+    border:solid 2px black;
+    justify-content:center;
+}
+
+.section-header{
+    background-color:orange;
+    text-align:center;
+    height:fit-content;
+    width:100%;
+    margin-block:10px;
+    font-size:36px;
+}
+
+section{
+    margin-block-end:100px;
+}
+
+
+header.grid1{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:antiquewhite;
+}
+
+nav{
+    padding:20px;
+    display:flex;
+    justify-content:space-evenly;
+    background-color:#00AFB9;
+    border: 2px solid black;
+
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+    font-size:24px;
+}
+
+.goal{
+    text-decoration:underline;
+}
+
+ol, li{
+    padding:20px;
+}
+
+
+h3{
+    font-size:36px;
+}
+
+@media(max-width:1000px){
+    nav {
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    *{
+        text-align:justify;
+    }
+    .paragraph-image p{
+        font-size:24px;
+        min-width:100%;
+    }
+    
+
+    body{
+        display:grid;
+        grid-template-areas:
+        'header header header header'
+        'navi navi navi navi'
+        'main main main main'
+        'aside aside aside aside'
+        'footer footer footer footer'
+    }
+
+    aside{
+        display:flex;
+        justify-content:center;
+    }
+
+    main{
+        margin:0;
+    }
+}
+
+#current-menu{
+    color:white;
+}
+
+aside section article{
+    border:solid 2px black;
+    background-color:orange;
+    padding:10px;
+    border-radius:10px;
+    margin:10px;
+}
+
+
+
+
+
+iframe{
+    width:100%;
+    max-width:400px;
+    min-height:400px;
+}
+article{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+}
+
+article img{
+    width:100%;
+    max-width:400px;    
+}
+article a, button{
+    background-color:orange;
+    align-self:center;
+    padding:10px;
+    padding-inline:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    border:solid 2px black;
+}
+
+button{
+    height:50px;
+    width:200px;
+    font-size:24px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.paragraph-image{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+table{
+    text-align:center;
+    background-color:wheat;
+    
+}
+
+th{
+    background-color:orange;
+}
+
+.help-orangutan{
+    max-height:300px;
+}
+
+.paragraph-image p{
+    font-size:24px;
+    width:70%;
+}
+
+.table-container{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.social-media-icon{
+max-width:200px;
+}
+
+.social-media-link{
+    background-color:transparent;
+}
+
+.social-media-link:hover{
+    background-color:transparent;
+}
+.social-media-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.form-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.big-text{
+    min-width:420px;
+    min-height:200px;
+}
+
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:justify;
+    gap:10px;
+    background-color:orange;
+    padding:20px;
+    border-radius:10px;
+}
+
+input{
+    min-width:420px;
+    min-height:30px;
+}
+
+.input-row{
+    min-width:500px;
+}
+
+p{
+    width:100%;
+    font-size:24px;
+}
+
+.orangutan-pic{
+    max-width:200px;
+}
+
+
+article a:hover, button:hover{
+    background-color:black;
+    color:orange;
+    transition:200ms;
+}
+
+nav a:hover{
+    color:orange;
+    transition:200ms;
+}
+
+table,th,td{
+    border:solid 2px black;
+    border-collapse:collapse;
+    font-size:24px;
+}
+
+td a{
+    margin:20px;
+    background-color:orange;
+    padding-inline:10px;
+    border-radius:5px;
+}
+
